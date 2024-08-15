@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aryan Lakhanpal's portfolio showcasing skills in web development, Java, and programming projects.">
     <title>Aryan Lakhanpal's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -18,13 +19,17 @@
                         <a href="#skills">Skills</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
-                      
                         <a href="resume.html" target="_blank">Resume</a>
                     </div>
                 </nav>
                 <img src="aryan.jpg" alt="Aryan Lakhanpal" class="nav-image">
                 <h1 class="greeting"></h1>
                 <p>Web Developer & Programming Enthusiast</p>
+            </div>
+            <div class="background-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
             </div>
         </div>
     </header>
@@ -37,6 +42,9 @@
 
     <section id="skills" class="section-dark">
         <h2>Skills</h2>
+        <div class="skills-chart">
+            <canvas id="skills-chart"></canvas>
+        </div>
         <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>Java</li>
@@ -44,29 +52,31 @@
             <li>C++</li>
             <li>Database Management</li>
         </ul>
-        <div class="skills-graph">
-            <div class="skill-bar" style="width: 95%;">HTML & CSS</div>
-            <div class="skill-bar" style="width: 90%;">JavaScript</div>
-            <div class="skill-bar" style="width: 85%;">Java</div>
-            <div class="skill-bar" style="width: 80%;">C++</div>
-            <div class="skill-bar" style="width: 75%;">Database Management</div>
-        </div>
     </section>
 
     <section id="projects" class="section-light">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project">
+                <div class="project-hover">
+                    <p>More details about this project...</p>
+                </div>
                 <img src="Screenshot 2024-08-13 145804.png" alt="Star Rating Component" class="project-image">
                 <h3>Star Rating Component</h3>
                 <p>A front-end web development project focused on creating an interactive star rating component.</p>
             </div>
             <div class="project">
+                <div class="project-hover">
+                    <p>More details about this project...</p>
+                </div>
                 <img src="Screenshot 2024-05-14 220250.png" alt="Online Voting System" class="project-image">
                 <h3>Online Voting System</h3>
                 <p>A project using PHP and MySQL for managing online elections securely.</p>
             </div>
             <div class="project">
+                <div class="project-hover">
+                    <p>More details about this project...</p>
+                </div>
                 <img src="IOT-based-Smart-Agriculture-Monitoring-System-Using-Arduino-UNO.jpg" alt="Smart Agriculture System" class="project-image">
                 <h3>Smart Agriculture System</h3>
                 <p>An IoT project using Arduino, rain sensors, and other components to monitor and manage agricultural environments.</p>
