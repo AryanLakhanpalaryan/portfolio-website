@@ -38,9 +38,7 @@ const skillsChart = new Chart(ctx, {
         scales: {
             y: {
                 beginAtZero: true,
-                ticks: {
-                    callback: function(value) { return value + '%' }
-                }
+                max: 100
             }
         }
     }
