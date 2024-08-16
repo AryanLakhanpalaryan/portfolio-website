@@ -161,6 +161,38 @@ ul li {
     border-radius: 10px;
 }
 
+@media (max-width: 480px) {
+    .link {
+        flex-direction: column;
+    }
+
+    .nav-image {
+        height: 30px;
+        width: 30px;
+    }
+
+    .section-light, .section-dark {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
 footer {
     background: #343a40;
     color: #fff;
