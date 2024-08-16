@@ -13,17 +13,24 @@ if (hour < 12) {
 
 greeting.textContent = greetingText;
 
-// Initialize Chart.js
 const ctx = document.getElementById('skills-chart').getContext('2d');
 const skillsChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['HTML & CSS', 'JavaScript', 'Java', 'C++', 'Database Management'],
+        labels: ['HTML', 'CSS', 'JavaScript', 'Java', 'C', 'C++', 'Databse Mangement'],
         datasets: [{
             label: 'Skill Level',
-            data: [95, 90, 85, 80, 75],
-            backgroundColor: '#17a2b8',
-            borderColor: '#117a8b',
+            data: [100, 95, 80, 86, 70, 75,100],
+            backgroundColor: [
+                '#FF6384',
+                '#36A2EB',
+                '#FFCE56',
+                '#4BC0C0',
+                '#9966FF',
+                '#FF9F40',
+                '#FF9F90'
+            ],
+            borderColor: '#333',
             borderWidth: 1
         }]
     },
