@@ -14,6 +14,8 @@ if (hour < 12) {
 greeting.textContent = greetingText;
 
 const ctx = document.getElementById('skills-chart').getContext('2d');
+ctx.canvas.width = 400; 
+ctx.canvas.height = 400;
 const skillsChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -31,7 +33,7 @@ const skillsChart = new Chart(ctx, {
                 '#FF9F90'
             ],
             borderColor: '#333',
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {
